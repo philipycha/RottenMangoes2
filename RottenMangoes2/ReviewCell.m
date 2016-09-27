@@ -32,6 +32,12 @@
     
     UIView *dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.reviewTextView.inputView = dummyView;
+    
+    if ([self.freshLabel.text isEqualToString:@"rotten"]) {
+         self.freshLabel.textColor = [UIColor redColor];
+    } else {
+        self.freshLabel.textColor = [UIColor greenColor];
+    }
 
 }
 
