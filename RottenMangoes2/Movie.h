@@ -14,11 +14,11 @@
 @property (strong, nonatomic) NSString * imageURL;
 @property (strong, nonatomic) NSString * review;
 
-@property (strong, nonatomic) NSString * year;
-@property (strong, nonatomic) NSString * runtime;
+@property (strong, nonatomic) NSNumber * year;
+@property (strong, nonatomic) NSNumber * runtime;
 
 
 
-- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review Year:(NSString *)year Runtime:(NSString *)runtime;
+- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review Year:(NSNumber *)year Runtime:(NSNumber *)runtime;
 
 @end

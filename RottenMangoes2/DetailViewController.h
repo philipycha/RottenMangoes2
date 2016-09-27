@@ -8,18 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "Movie.h"
+#import "Review.h"
+#import "ReviewCell.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *detailImageView;
 @property (weak, nonatomic) IBOutlet UILabel *detailTitle;
 @property (weak, nonatomic) IBOutlet UILabel *detailYearLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailRuntimeLabel;
 
-@property (weak, nonatomic) IBOutlet UITextView *review01TextView;
-@property (weak, nonatomic) IBOutlet UITextView *review02TextView;
 
-
+@property (strong, nonatomic) Review *review;
 @property (strong, nonatomic) Movie *movie;
 
 

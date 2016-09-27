@@ -16,6 +16,10 @@
 		15AEABBE1D99C5E2006F9A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AEABBC1D99C5E2006F9A5C /* LaunchScreen.storyboard */; };
 		15AEABC71D99C5FD006F9A5C /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABC61D99C5FD006F9A5C /* Movie.m */; };
 		15AEABCA1D99D851006F9A5C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABC91D99D851006F9A5C /* CollectionViewCell.m */; };
+		15AEABCD1D9B0634006F9A5C /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABCC1D9B0634006F9A5C /* ReviewCell.m */; };
+		15AEABD01D9B0643006F9A5C /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABCF1D9B0643006F9A5C /* Review.m */; };
+		15AEABD31D9B09EA006F9A5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABD21D9B09EA006F9A5C /* MapKit.framework */; };
+		15AEABD51D9B09F0006F9A5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABD41D9B09F0006F9A5C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,12 @@
 		15AEABC61D99C5FD006F9A5C /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		15AEABC81D99D851006F9A5C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		15AEABC91D99D851006F9A5C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		15AEABCB1D9B0634006F9A5C /* ReviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCell.h; sourceTree = "<group>"; };
+		15AEABCC1D9B0634006F9A5C /* ReviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCell.m; sourceTree = "<group>"; };
+		15AEABCE1D9B0643006F9A5C /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		15AEABCF1D9B0643006F9A5C /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		15AEABD21D9B09EA006F9A5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		15AEABD41D9B09F0006F9A5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AEABD51D9B09F0006F9A5C /* CoreLocation.framework in Frameworks */,
+				15AEABD31D9B09EA006F9A5C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +65,7 @@
 			children = (
 				15AEABAA1D99C5E2006F9A5C /* RottenMangoes2 */,
 				15AEABA91D99C5E2006F9A5C /* Products */,
+				15AEABD11D9B09EA006F9A5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +90,10 @@
 				15AEABC91D99D851006F9A5C /* CollectionViewCell.m */,
 				15AEABB41D99C5E2006F9A5C /* DetailViewController.h */,
 				15AEABB51D99C5E2006F9A5C /* DetailViewController.m */,
+				15AEABCB1D9B0634006F9A5C /* ReviewCell.h */,
+				15AEABCC1D9B0634006F9A5C /* ReviewCell.m */,
+				15AEABCE1D9B0643006F9A5C /* Review.h */,
+				15AEABCF1D9B0643006F9A5C /* Review.m */,
 				15AEABB71D99C5E2006F9A5C /* Main.storyboard */,
 				15AEABBA1D99C5E2006F9A5C /* Assets.xcassets */,
 				15AEABBC1D99C5E2006F9A5C /* LaunchScreen.storyboard */,
@@ -92,6 +109,15 @@
 				15AEABAC1D99C5E2006F9A5C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15AEABD11D9B09EA006F9A5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15AEABD41D9B09F0006F9A5C /* CoreLocation.framework */,
+				15AEABD21D9B09EA006F9A5C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +197,9 @@
 				15AEABB31D99C5E2006F9A5C /* MasterViewController.m in Sources */,
 				15AEABC71D99C5FD006F9A5C /* Movie.m in Sources */,
 				15AEABAD1D99C5E2006F9A5C /* main.m in Sources */,
+				15AEABD01D9B0643006F9A5C /* Review.m in Sources */,
 				15AEABB61D99C5E2006F9A5C /* DetailViewController.m in Sources */,
+				15AEABCD1D9B0634006F9A5C /* ReviewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +356,7 @@
 				15AEABC41D99C5E2006F9A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
