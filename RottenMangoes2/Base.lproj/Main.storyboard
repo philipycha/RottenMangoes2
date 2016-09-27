@@ -79,12 +79,81 @@
                     <view key="view" contentMode="scaleToFill" id="hbI-Z2-1rG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Db2-nX-T08">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="LBG-Bs-0R8"/>
+                                    <constraint firstAttribute="width" constant="160" id="NG8-Ec-GbF"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVP-Ne-zBa">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GvR-0S-ctv"/>
+                                    <constraint firstAttribute="width" constant="343" id="pOF-ny-d1x"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9UQ-xW-1tM">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="NIK-4O-hlI"/>
+                                    <constraint firstAttribute="width" constant="343" id="yM7-2a-ea1"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a50-LM-k84">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="a1t-Tt-A2i"/>
+                                    <constraint firstAttribute="height" constant="44" id="aya-ti-CA5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-2k-8OT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL3-bo-ba5">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcv-B1-hxo">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sVP-Ne-zBa" firstAttribute="centerX" secondItem="hbI-Z2-1rG" secondAttribute="centerX" id="1HD-aN-D8N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZL3-bo-ba5" secondAttribute="trailing" constant="90" id="5pH-Fb-UfY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a50-LM-k84" secondAttribute="trailing" id="9tO-1C-YKt"/>
+                            <constraint firstItem="9UQ-xW-1tM" firstAttribute="top" secondItem="sVP-Ne-zBa" secondAttribute="bottom" constant="23" id="FKi-aK-UNs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Db2-nX-T08" secondAttribute="leading" id="HVW-ea-6n0"/>
+                            <constraint firstItem="9UQ-xW-1tM" firstAttribute="centerX" secondItem="hbI-Z2-1rG" secondAttribute="centerX" id="KhF-JV-IUo"/>
+                            <constraint firstItem="a50-LM-k84" firstAttribute="top" secondItem="pmH-3s-hyR" secondAttribute="bottom" constant="8" id="KlX-51-Y0J"/>
+                            <constraint firstItem="Db2-nX-T08" firstAttribute="top" secondItem="pmH-3s-hyR" secondAttribute="bottom" constant="8" id="LtD-ot-1Wb"/>
+                            <constraint firstItem="ZL3-bo-ba5" firstAttribute="top" secondItem="a50-LM-k84" secondAttribute="bottom" constant="8" id="QoA-rQ-9vL"/>
+                            <constraint firstItem="dcv-B1-hxo" firstAttribute="centerY" secondItem="hbI-Z2-1rG" secondAttribute="centerY" id="Smd-ek-Hy1"/>
+                            <constraint firstItem="dcv-B1-hxo" firstAttribute="centerX" secondItem="hbI-Z2-1rG" secondAttribute="centerX" id="Ucc-Zo-MET"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qIc-2k-8OT" secondAttribute="trailing" constant="90" id="mum-zz-jcI"/>
+                            <constraint firstItem="ZL3-bo-ba5" firstAttribute="leading" secondItem="hbI-Z2-1rG" secondAttribute="leadingMargin" constant="190" id="t2A-d1-41R"/>
+                            <constraint firstItem="sVP-Ne-zBa" firstAttribute="top" secondItem="dcv-B1-hxo" secondAttribute="bottom" constant="8" id="xWU-wk-ZDI"/>
+                            <constraint firstItem="qIc-2k-8OT" firstAttribute="top" secondItem="ZL3-bo-ba5" secondAttribute="bottom" constant="8" id="zjj-dE-pXF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFw-Wt-xwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2351" y="-572"/>
+            <point key="canvasLocation" x="2349.5999999999999" y="-572.56371814092961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JB2-jV-dMp">

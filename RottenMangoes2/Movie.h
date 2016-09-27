@@ -12,8 +12,10 @@
 
 @property (strong, nonatomic) NSString * title;
 @property (strong, nonatomic) NSString * imageURL;
+@property (strong, nonatomic) NSString * review;
 
-- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL;
+
+- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review;
 
 
 @end

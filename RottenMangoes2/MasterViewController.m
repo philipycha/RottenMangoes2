@@ -41,8 +41,9 @@
                 
                 NSString *title = eachMovie[@"title"];
                 NSString *imageURL = eachMovie[@"posters"][@"thumbnail"];
+                NSString *review = eachMovie[@"links"][@"reviews"];
                 
-                Movie *movie = [[Movie alloc] initWithTitle:title ImageURL:imageURL];
+                Movie *movie = [[Movie alloc] initWithTitle:title ImageURL:imageURL Review:review];
                 
                 [self.movies addObject:movie];
             }

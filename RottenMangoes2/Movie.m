@@ -10,13 +10,14 @@
 
 @implementation Movie
 
-- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL;
+- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review;
 {
     self = [super init];
     if (self) {
         
         _title = title;
         _imageURL = imageURL;
+        _review = review;
         
     }
     return self;
