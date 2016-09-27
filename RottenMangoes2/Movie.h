@@ -11,7 +11,9 @@
 @interface Movie : NSObject
 
 @property (strong, nonatomic) NSString * title;
+@property (strong, nonatomic) NSString * imageURL;
 
-- (instancetype)initWithTitle:(NSString *)title;
+- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL;
+
 
 @end

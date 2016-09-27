@@ -38,9 +38,11 @@
             NSArray *movieArray = movieDict[@"movies"];
             
             for (NSDictionary *eachMovie in movieArray) {
-                NSString *title = eachMovie[@"title"];
                 
-                Movie *movie = [[Movie alloc] initWithTitle:title];
+                NSString *title = eachMovie[@"title"];
+                NSString *imageURL = eachMovie[@"posters"][@"thumbnail"];
+                
+                Movie *movie = [[Movie alloc] initWithTitle:title ImageURL:imageURL];
                 
                 [self.movies addObject:movie];
             }
@@ -112,6 +114,7 @@
     Movie *movie = self.movies[indexPath.row];
     
     cell.cellLabel.text = movie.title;
+    cell.cellImageView.image = [UIImage imageWithData: [NSData dataWithContentsOfURL:[NSURL URLWithString:movie.imageURL]]];
     
     return cell;
 }
