@@ -30,7 +30,10 @@
     self.freshLabel.text = self.review.fresh;
     self.reviewTextView.text = self.review.reviewText;
     
-    
+    UIView *dummyView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    self.reviewTextView.inputView = dummyView;
+
 }
+
 
 @end

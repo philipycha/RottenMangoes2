@@ -117,6 +117,10 @@
     
 }
 
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    return NO;  // Hide both keyboard and blinking cursor.
+}
+
 
 
 
