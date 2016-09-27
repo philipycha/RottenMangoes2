@@ -15,17 +15,21 @@
 @implementation DetailViewController
 
 - (void)configureView {
-    // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
+    
+    self.detailImageView.image = [UIImage imageWithData: [NSData dataWithContentsOfURL:[NSURL URLWithString:self.movie.imageURL]]];
+    self.detailTitle.text = self.movie.title;
+    self.detailYearLabel.text = self.movie.year;
+    self.detailRuntimeLabel.text = self.movie.runtime;
+//    self.review01TextView.text = [self.movie.review];
+//    self.review02TextView.text = self.movie.review;
+   
 }
 
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     [self configureView];
     
 }
@@ -34,18 +38,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(NSDate *)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
 }
 
 

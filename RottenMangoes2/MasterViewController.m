@@ -42,8 +42,10 @@
                 NSString *title = eachMovie[@"title"];
                 NSString *imageURL = eachMovie[@"posters"][@"thumbnail"];
                 NSString *review = eachMovie[@"links"][@"reviews"];
+                NSString *year = eachMovie[@"year"];
+                NSString *runtime = eachMovie[@"runtime"];
                 
-                Movie *movie = [[Movie alloc] initWithTitle:title ImageURL:imageURL Review:review];
+                Movie *movie = [[Movie alloc] initWithTitle:title ImageURL:imageURL Review:review Year:year Runtime:runtime];
                 
                 [self.movies addObject:movie];
             }
@@ -76,20 +78,20 @@
 
 #pragma mark - Segues
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"showDetailVC"])
-//    {
-//        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
-//        
-//        DetailViewController *detailVC = segue.destinationViewController;
-//        
-//        Movie *movie = [self.movies objectAtIndex:indexPath.item];
-//        
-//        detailVC. = movie;
-//        
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showDetailVC"])
+    {
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
+        
+        DetailViewController *detailVC = segue.destinationViewController;
+        
+        Movie *movie = [self.movies objectAtIndex:indexPath.item];
+        
+        detailVC.movie = movie;
+        
+    }
+}
 
 
 #pragma mark - Table View

@@ -10,7 +10,7 @@
 
 @implementation Movie
 
-- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review;
+- (instancetype)initWithTitle:(NSString *)title ImageURL:(NSString *)imageURL Review:(NSString *)review Year:(NSString *)year Runtime:(NSString *)runtime
 {
     self = [super init];
     if (self) {

@@ -150,6 +150,14 @@
                             <constraint firstItem="qIc-2k-8OT" firstAttribute="top" secondItem="ZL3-bo-ba5" secondAttribute="bottom" constant="8" id="zjj-dE-pXF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="Db2-nX-T08" id="2Eo-3e-uQn"/>
+                        <outlet property="detailRuntimeLabel" destination="qIc-2k-8OT" id="xOa-sL-Py1"/>
+                        <outlet property="detailTitle" destination="a50-LM-k84" id="FDu-js-Z01"/>
+                        <outlet property="detailYearLabel" destination="ZL3-bo-ba5" id="8Th-Fi-BLW"/>
+                        <outlet property="review01TextView" destination="sVP-Ne-zBa" id="TzB-TK-jny"/>
+                        <outlet property="review02TextView" destination="9UQ-xW-1tM" id="OBu-ts-DAr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFw-Wt-xwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
