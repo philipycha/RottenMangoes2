@@ -18,8 +18,10 @@
 		15AEABCA1D99D851006F9A5C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABC91D99D851006F9A5C /* CollectionViewCell.m */; };
 		15AEABCD1D9B0634006F9A5C /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABCC1D9B0634006F9A5C /* ReviewCell.m */; };
 		15AEABD01D9B0643006F9A5C /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABCF1D9B0643006F9A5C /* Review.m */; };
-		15AEABD31D9B09EA006F9A5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABD21D9B09EA006F9A5C /* MapKit.framework */; };
-		15AEABD51D9B09F0006F9A5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABD41D9B09F0006F9A5C /* CoreLocation.framework */; };
+		15AEABD81D9B30C9006F9A5C /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABD71D9B30C9006F9A5C /* LocationManager.m */; };
+		15AEABDB1D9B3140006F9A5C /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEABDA1D9B3140006F9A5C /* Theatre.m */; };
+		15AEABDD1D9B3184006F9A5C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABDC1D9B3184006F9A5C /* CoreLocation.framework */; };
+		15AEABDF1D9B318A006F9A5C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEABDE1D9B318A006F9A5C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,12 @@
 		15AEABCF1D9B0643006F9A5C /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
 		15AEABD21D9B09EA006F9A5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		15AEABD41D9B09F0006F9A5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		15AEABD61D9B30C9006F9A5C /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		15AEABD71D9B30C9006F9A5C /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		15AEABD91D9B3140006F9A5C /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		15AEABDA1D9B3140006F9A5C /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
+		15AEABDC1D9B3184006F9A5C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		15AEABDE1D9B318A006F9A5C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15AEABD51D9B09F0006F9A5C /* CoreLocation.framework in Frameworks */,
-				15AEABD31D9B09EA006F9A5C /* MapKit.framework in Frameworks */,
+				15AEABDD1D9B3184006F9A5C /* CoreLocation.framework in Frameworks */,
+				15AEABDF1D9B318A006F9A5C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +88,14 @@
 		15AEABAA1D99C5E2006F9A5C /* RottenMangoes2 */ = {
 			isa = PBXGroup;
 			children = (
+				15AEABDE1D9B318A006F9A5C /* MapKit.framework */,
+				15AEABDC1D9B3184006F9A5C /* CoreLocation.framework */,
 				15AEABAE1D99C5E2006F9A5C /* AppDelegate.h */,
 				15AEABAF1D99C5E2006F9A5C /* AppDelegate.m */,
+				15AEABD61D9B30C9006F9A5C /* LocationManager.h */,
+				15AEABD71D9B30C9006F9A5C /* LocationManager.m */,
+				15AEABD91D9B3140006F9A5C /* Theatre.h */,
+				15AEABDA1D9B3140006F9A5C /* Theatre.m */,
 				15AEABB11D99C5E2006F9A5C /* MasterViewController.h */,
 				15AEABB21D99C5E2006F9A5C /* MasterViewController.m */,
 				15AEABC51D99C5FD006F9A5C /* Movie.h */,
@@ -195,7 +209,9 @@
 				15AEABCA1D99D851006F9A5C /* CollectionViewCell.m in Sources */,
 				15AEABB01D99C5E2006F9A5C /* AppDelegate.m in Sources */,
 				15AEABB31D99C5E2006F9A5C /* MasterViewController.m in Sources */,
+				15AEABD81D9B30C9006F9A5C /* LocationManager.m in Sources */,
 				15AEABC71D99C5FD006F9A5C /* Movie.m in Sources */,
+				15AEABDB1D9B3140006F9A5C /* Theatre.m in Sources */,
 				15AEABAD1D99C5E2006F9A5C /* main.m in Sources */,
 				15AEABD01D9B0643006F9A5C /* Review.m in Sources */,
 				15AEABB61D99C5E2006F9A5C /* DetailViewController.m in Sources */,

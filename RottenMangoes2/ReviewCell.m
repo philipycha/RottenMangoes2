@@ -36,7 +36,7 @@
     if ([self.freshLabel.text isEqualToString:@"rotten"]) {
          self.freshLabel.textColor = [UIColor redColor];
     } else {
-        self.freshLabel.textColor = [UIColor greenColor];
+        self.freshLabel.textColor = [UIColor yellowColor];
     }
 
 }
